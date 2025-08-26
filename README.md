@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flutter_app_task
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Flutter_Training_Task
+>>>>>>> 1cc289e8bc9187592fc826f4d38c2ede6afa492b

@@ -26,10 +26,14 @@ class ProfileTab extends StatelessWidget {
             const SizedBox(height: 32),
             ElevatedButton.icon(
               icon: const Icon(Icons.logout),
-              label: const Text('Logout'),
+              label: const Text(
+                'Logout',
+                style: TextStyle(color: Colors.red),
+              ),
               onPressed: logoutCallback,
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(double.infinity, 48),
+                iconColor: Colors.red,
               ),
             ),
           ],

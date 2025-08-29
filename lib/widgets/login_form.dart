@@ -1,11 +1,13 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app_task/helper/validators.dart';
 import 'package:provider/provider.dart';
 
 import '../models/login_request.dart';
 import '../providers/auth_provider.dart';
 import '../screens/home_screen.dart';
+
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -70,9 +72,9 @@ class _LoginFormState extends State<LoginForm> {
                     borderSide: const BorderSide(color: Colors.white, width: 2),
                   ),
                 ),
-                validator: (value) =>
-                (value == null || value.trim().isEmpty) ? 'Enter Email' : null,
+                validator: Validators.validateEmail,
               ),
+
               const SizedBox(height: 14),
               TextFormField(
                 style: const TextStyle(color: Colors.white),
@@ -109,8 +111,7 @@ class _LoginFormState extends State<LoginForm> {
                     borderSide: const BorderSide(color: Colors.white, width: 2),
                   ),
                 ),
-                validator: (value) =>
-                (value == null || value.trim().isEmpty) ? 'Enter Password' : null,
+                validator: Validators.validatePassword,
               ),
 
               const SizedBox(height: 20),

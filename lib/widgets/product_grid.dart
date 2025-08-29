@@ -37,6 +37,8 @@ class ProductCard extends StatelessWidget {
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: InkWell(
+        splashColor: Colors.grey,
+        highlightColor: Colors.grey,
         onTap: () {
           Navigator.push(
             context,

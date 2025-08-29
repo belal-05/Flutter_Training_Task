@@ -19,8 +19,8 @@ void main() {
 
     test('returns null for valid emails', () {
       expect(Validators.validateEmail('user@example.com'), null);
-      expect(Validators.validateEmail('john.doe123@test.co.uk'), null);
-      expect(Validators.validateEmail('a@b.io'), null);
+      expect(Validators.validateEmail('belal.ahmad123@test.co.in'), null);
+      expect(Validators.validateEmail('a@b.in'), null);
     });
   });
 
@@ -41,7 +41,7 @@ void main() {
     test('returns null if password is at least 8 characters', () {
       expect(Validators.validatePassword('12345678'), null);
       expect(Validators.validatePassword('strongPass!'), null);
-      expect(Validators.validatePassword('  strongpass!  '), null); // trims spaces
+      expect(Validators.validatePassword('  strongpass!  '), null);
     });
   });
 
